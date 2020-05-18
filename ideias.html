@@ -3,53 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Casa Criativa</title>
+  <title>Ideias - Casa Criativa</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">  
 </head>
-<body>
+<body id="page-ideas">
 
-  <div class="container">
 
-    <section id="intro">
-
-      <header>
-        <h1>Casa Criativa</h1>
-  
-        <a href="index.html">
-          <img src="27pdZLL.png" alt="Logo Casa Criativa">
-        </a>
-      </header>
-      
-      <main>
-        <p>
-          Ficar em casa em períodos longos, não deve ser nada fácil.
-        </p>
-  
-        <p>
-          Iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, 
-          dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
-        </p>
-  
-        <p>
-          Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicionando a sua ideia.
-        </p>
-      </main>
-      
-      <section id="button">        
-        <button onclick="onOff()">+ Adicionar Ideia</button>
-        <a href="ideias.html" class="button" >Ver ideias</a >
-      </section>
-      
-      <footer>
-        <p id="footer">
-          Desenvolvido por <a href="https://www.linkedin.com/in/henrique-ba%C3%AAta-leite-785a4b15a/" target="_blank">Henrique Baêta Leite</a>
-        </p>
-      </footer>
-      
-    </section>
+<div class="container">
     
-    <section id="last-ideias">
+  <header>
+    <a href="index.html">
+      <img src="27pdZLL.png" alt="Logo Casa Criativa">
+    </a>
+    <nav>
+      <li><a href="index.html">Início</a></li>
+      <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+    </nav>
+  </header>
+
+  <section id="title">
+    <p>Em exibição</p>
+    <h1>Ideias</h1>
+  </section>
+
+  <main id="ideas">
+    <section id="ideas">
 
       <div class="idea">
         <img src="coding.svg" alt="Imagem Stay at Home">
@@ -86,16 +65,33 @@
           <a href="#">Ir para a ideia</a>
         </div>
       </div>
+
+      <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/1941/1941126.svg" alt="Imagem Karaoke">
+        <div class="content">
+          <h3>Karaoke</h3>
+          <p>Diversão em família</p>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi libero beatae saepe unde fugit reiciendis suscipit, accusantium alias quae!
+          </div>
+          <a href="#">Ir para a ideia</a>
+        </div>
+      </div>
             
     </section>
+  </main>
 
-  </div>
+  <footer>
+    <p id="footer">
+      Desenvolvido por <a href="https://www.linkedin.com/in/henrique-ba%C3%AAta-leite-785a4b15a/" target="_blank">Henrique Baêta Leite</a>
+    </p>
+  </footer>
 
-  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
 
-  <!--MODAL-->
+  <!-- MODAL!!! -->
 
-  <div id="modal" class="hide">
+  <div id="modal" class="">
 
     <div class="content">
       <h1>Nova Ideia</h1>
@@ -137,6 +133,5 @@
   </div>
 
   <script src="script.js"></script>
-    
-  </body>
-  </html>
+</body>
+</html>
